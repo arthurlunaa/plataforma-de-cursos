@@ -1,0 +1,189 @@
+/* Estilo Geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilo do Header */
+.navbar {
+    background-color: black
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #2E343B;
+
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Botões */
+.btn-primary, .btn-secondary {
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}
+
+/* Seção de Cursos */
+.courses {
+    padding: 3rem 0;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course-item {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(33.33% - 1rem);
+}
+
+.course-item h3 {
+    margin-top: 0;
+}
+
+/* Estilo do Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* Estilo para a Página de Login */
+.login-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.login-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+}
+/* Estilo para a Página de Área de Membros */
+.members-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.members-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.course-item {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(33.33% - 1rem);
+}
+
+.course-item button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .course-item {
+        width: calc(50% - 1rem);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .course-item {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 0.9rem;
+    }
+}
